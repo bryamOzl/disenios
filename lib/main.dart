@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:disenios/screens/screens.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -8,9 +10,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: Center(
-        child: Text('Hola Mundo'),
-      ),
+      initialRoute: 'basic_design',
+      routes: {
+        'basic_design': (_) => BasicDesignScreen(),
+      },
     );
   }
 }
