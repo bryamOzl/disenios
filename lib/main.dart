@@ -12,10 +12,11 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Material App',
-      theme: ThemeData.dark(),
-      initialRoute: 'home_screen',
+      title: 'Disenios App',
+      // theme: ThemeData.dark(),
+      initialRoute: 'index',
       routes: {
+        'index': (_) => IndexScreen(),
         'basic_design': (_) => BasicDesignScreen(),
         'scrool_screen': (_) => ScroolDesignScreen(),
         'home_screen': (_) => HomeScreen(),
